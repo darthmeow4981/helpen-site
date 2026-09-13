@@ -1,0 +1,25 @@
+/* Helpen's own palette, from src/lib/theme.ts */
+:root{
+  --page:#F4EFE4; --card:#FBF8F1; --ink:#2A241D; --soft:#4A4238;
+  --muted:#8A8070; --rule:#D6CDB9; --accent:#A8442E; --stem:#3E5241;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--page); color:var(--ink);
+  font-family:"Quicksand",ui-rounded,"Segoe UI",system-ui,sans-serif;
+  font-size:17px; line-height:1.65; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:38rem;margin:0 auto;padding:clamp(2.5rem,7vw,5rem) 1.35rem 6rem}
+.mark{display:block;width:76px;height:76px;margin-bottom:1.6rem}
+h1{font-size:clamp(2rem,6vw,2.7rem);font-weight:700;letter-spacing:-.015em;margin:0 0 .5rem;text-wrap:balance}
+.tag{color:var(--soft);font-size:1.1rem;margin:0 0 2.5rem}
+h2{font-size:1.2rem;font-weight:600;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+p,li{color:var(--soft);margin:0 0 1rem}
+strong{color:var(--ink);font-weight:600}
+a{color:var(--accent)}
+em{color:var(--muted);font-style:normal;font-size:.9rem}
+hr{border:0;border-top:1px solid var(--rule);margin:2.5rem 0}
+.foot{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule);font-size:.86rem;color:var(--muted)}
+@media (prefers-color-scheme:dark){
+  :root{--page:#191510;--card:#221D16;--ink:#F0E8D9;--soft:#D8CFBE;--muted:#9A9080;--rule:#3B342A;--accent:#E08265;}
+}
