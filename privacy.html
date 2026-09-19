@@ -14,28 +14,33 @@
 <div class="wrap">
 <img class="mark" src="logo.png" alt="Helpen">
 <h1>Privacy Policy</h1>
-<p><em>Last updated: 13 September 2026.</em></p>
+<p><em>Last updated: 15 September 2026.</em></p>
 <p>Helpen is a private journal. You write down one good thing you did each day, and the app grows a garden from it. There is no feed, no friends, and nothing you write is shown to anyone else.</p>
 <h2>What we collect</h2>
 <p><strong>Your email address.</strong> Used only to sign you in. We send a six-digit code to it. We do not send marketing email.</p>
 <p><strong>Your name, as you type it.</strong> Shown in the greeting on your own screen.</p>
 <p><strong>Your entries.</strong> The text you write, the date each entry belongs to, and when it was created and last changed.</p>
-<p>That is everything. We do not collect your location, your contacts, your photos, your device identifiers, or any advertising identifier. There is no analytics SDK, no advertising SDK, and no third-party tracker in this app.</p>
+<p>That is everything. We do not collect your location, your contacts, your photos, your device identifiers, or any advertising identifier. There is no analytics in this app, no advertising, and nothing that follows you between apps or across the web.</p>
 <h2>How it is stored</h2>
 <p>Entries are written to your phone first, and the app works fully offline. When you have a connection they are copied to our database so they survive losing your phone and follow you to a new one. That database is hosted by Supabase (supabase.com), and row-level security means a signed-in account can read and write only its own rows.</p>
+<p>Your sign-in is kept in your phone's own secure storage — the Keychain on iPhone, the Keystore on Android — and is set not to travel to a different device in a backup.</p>
 <p>Signing out erases the entries from your phone. They remain in your account until you delete it.</p>
 <h2>Who we share it with</h2>
-<p>Nobody. We do not sell your data, we do not share it with advertisers, and we do not use it to train anything. Supabase hosts the database on our behalf and processes nothing on its own account.</p>
+<p>We do not sell your data, we do not share it with advertisers, and we do not use it to train anything.</p>
+<p>Three companies handle parts of this on our behalf, and only on our instructions. None of them may use your data for their own purposes.</p>
+<p><strong>Supabase</strong> hosts the database and the sign-in system. They store your email address, your name and your entries.</p>
+<p><strong>Resend</strong> delivers the email containing your sign-in code. They see your email address and the code. They do not see your entries or your name.</p>
+<p><strong>Cloudflare</strong> runs the security check on the sign-in screen, which is there to stop automated abuse of the code-sending system. You will not normally see it or have to do anything. It looks at signals from your device and your browser engine to judge whether the request is coming from a person. It does not see your email address, your name or your entries, and it is used on the sign-in screen only. Cloudflare's handling of it is covered by the <a href="https://www.cloudflare.com/turnstile-privacy-policy/">Cloudflare Turnstile Privacy Addendum</a>.</p>
 <h2>Deleting your account</h2>
 <p>Settings → Delete account removes your account, your name, and every entry, from your phone and from our servers. It is immediate and cannot be undone.</p>
-<p>You can also write to <a href="mailto:hello@helpen.app">hello@helpen.app</a> and ask us to do it.</p>
+<p>You can also write to <a href="mailto:hello@helpen.app">hello@helpen.app</a> and ask us to do it. <a href="delete.html">How to delete your account</a> sets out both routes in full.</p>
 <h2>Children</h2>
 <p>Helpen is not directed at children under 13, and we do not knowingly collect anything from them.</p>
 <h2>Changes</h2>
 <p>If this policy changes, the date at the top changes with it.</p>
 <h2>Contact</h2>
 <p><a href="mailto:hello@helpen.app">hello@helpen.app</a></p>
-<p class="foot"><a href="./">Helpen</a> — a daily record of small kindnesses.</p>
+<p class="foot"><a href="./">Helpen</a> — a daily record of small kindnesses. <a href="delete.html">Delete your account</a></p>
 </div>
 </body>
 </html>
